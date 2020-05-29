@@ -1,21 +1,48 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-
-  <title>Donate</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <meta charset="utf-8">
+    <title>Donate</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
     <div>
-        
+        <html>
+
+        <body>
+            <div id="navBar">
+                <a href="index.html">Home</a>
+                <a href="donate.html">Donate</a>
+            </div>
+            <div id="donateForm">
+                <h2>Donate</h2>
+                <form>
+                    <label for="fname">First name</label><br>
+                    <input type="text" id="fname " name="fname" value="John"><br>
+                    <label for="lname">Last name</label><br>
+                    <input type="text" id="lname " name="lname" value="Doe"><br>
+                    <label for="lname">Amount</label><br>
+                    <input type="number" id="lname" name="lname" value="Doe"><br><br>
+                    <Button onclick="submit()">Submit</button>
+                </form>
+                <p id=" thanks "> </p>
+            </div>
+        </body>
+
+        </html>
     </div>
-    <script src="js/scripts.js"></script>
+    <script type="text/javascript ">
+        function submit() {
+            let fname = document.getElementById("fname ").value;
+            let lname = document.getElementById("lname ").value;
+            document.getElementById(" thanks ").innerHTML = `Thank you for your generous donation Mr.${lname}`;
+        }
+    </script>
 </body>
+
 </html>
