@@ -1,3 +1,3 @@
 
 # Assignment-1
-http://g.recordit.co/EALfZ8Clod.gif
+<img src="http://g.recordit.co/0q5Tf1fDuX.gif" alt="Logo">
